@@ -38,7 +38,9 @@ for (let i = 0; i < bells.length; i++) {
 
 $(function() {
   setupSample(0);
-
+  $("body").svg({onLoad: (o) => {
+    svg = o;
+  }});
   $("#startplay").on("click", startstopclick);
 });
 
