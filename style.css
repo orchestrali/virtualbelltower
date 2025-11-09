@@ -4,6 +4,15 @@ body {
   margin: 25px;
 }
 
+div.button {
+  display: inline-block;
+  padding: 6px;
+  border: 1px solid black;
+}
+.button:hover {
+  cursor: pointer;
+}
+
 
 div#room {
   position: relative;
