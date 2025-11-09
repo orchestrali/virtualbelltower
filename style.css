@@ -4,6 +4,10 @@ body {
   margin: 25px;
 }
 
+li {
+  list-style-type: none;
+}
+
 div.button {
   display: inline-block;
   padding: 6px;
