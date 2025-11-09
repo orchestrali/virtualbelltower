@@ -10,7 +10,8 @@ var bells = [
 var duration = 1.3;
 //holders
 var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-var gainNode;
+var gainNode = audioCtx.createGain();
+gainNode.gain.value = 0.75;
 var currentbells = [];
 var svg;
 var rowArr = [[1,2,3,4,5,6],[1,2,3,4,5,6],[2,1,4,3,6,5],[2,1,3,4,5,6],[1,2,4,3,6,5],[1,2,3,4,5,6]];
